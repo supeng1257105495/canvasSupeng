@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>离子星空</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #myCanvas {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<script>
+var arr1 = [2,3,1,1,4];
+var arr2 = [3,2,1,0,4];
+var arr3 = [5,1,1,1,4,1,2,12,3,4,1,5];
+var arr4 = [5,1,1,1,4,1,2,12,3,4,1,5,1];
+var arr5 = [5,2,1,0,4];
+var arr6 = [5,2,1,0,4,1,1,7,10,1,1,1,1,1,1,1,1,1];
+function arr(arr){
+let length = arr.length;
+if(arr.length == arr[0]){
+console.log(true);
+}else if(arr[0] == 0){
+console.log(false);
+}else{
+let num = 0;
+let data = 0;
+for(let index in arr){
+if(arr[index == 0]){
+break;
+}else{
+if(data == index){
+if(num == length){
+break;
+}else{
+num += arr[index] + data
+data += arr[index];
+}
+}
+}
+}
+if(num == length){
+console.log(true);
+}else{
+console.log(false)
+}
+}
+}
+arr(arr1);
+arr(arr2);
+arr(arr3);
+arr(arr4);
+arr(arr5);
+arr(arr6);
+</script>
+
+</html>
